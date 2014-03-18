@@ -1,0 +1,22 @@
+== Cog Node     !Cog #definition .kwim
+
+A cog *node* is the basic unit of storage in a [Cog Store]. A node has rich
+data about a single thing. It is a flat hash of defined keys and typed values.
+
+A node itself has a type, and that type has a schema. The schema defines the
+data slots (keys/values) in a node. Each slot value has a type, that is defined
+in the schema.
+
+For instance, here is the data parts of a possible node conceptualized in YAML:
+
+    '!': ContactInfo                      # The cog type of the node.
+    '*': G7PR                             # ID of the node
+    '#': c63631e                          # Node revision
+    '?': Tue Mar 18 08:09:26 PDT 2014     # Revision time
+    name: Bob Bobber
+    cell: 409-765-4321
+    address: 123 Main St
+    note: Old friend
+
+A schema is itself a node (of type !Schema). While all nodes are a flat hash,
+the value a slot can be another node, adding depth.
