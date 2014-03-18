@@ -1,0 +1,13 @@
+== Cog ID   !Cog #definition .kwim
+
+Every cog node has a UUID like `9N3M-LH7ZPV2PDP5VPR2W8VD3N`.
+
+`9N3M` is the short "id", and is human friendly. It is a crockford-base32
+encoded v4 uuid. It contains at least one alpha and at least one digit, and is
+at least 4 chars long. `9N3M-LH7ZPV2PDP5VPR2W8VD3N` is the full id. The short
+id is unique to the cogdb, and the full id is unique to the universe.
+
+A cog store also has a cog id. It can be linked to a URL via a cog dns entry.
+
+The id can be expressed in upper or lower case.  A text reference to a node
+looks like '*9n3m'.
