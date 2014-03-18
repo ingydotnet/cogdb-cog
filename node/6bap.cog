@@ -1,0 +1,16 @@
+== Cog Basics   !Cog #story #cog .kwim
+
+To discuss Cog/CogDB there are a lot of little concepts that need to be
+introduced:
+
+* [Cog Store] - A complete and addressable cog database
+* [Cog Node] - Basic unit of cog storage
+* [Cog ID] - The (human friendly) uuid of a node
+* [Cog Rev] - A historical revision of a cog node
+* [Cog Type] - Every node has a dell-defined type
+* [Cog Schema] - The definition of a type
+* [Cog Cast] - A particular view of a node
+* [Cog Slot] - A particular named field of a node
+* [Cog Node Ref] - A pointer to a cog node
+* [Cog Domain] - A federation of cog stores
+* [Cog DNS] - Index of cog store ids to their location
